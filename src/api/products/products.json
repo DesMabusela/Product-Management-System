@@ -1,0 +1,113 @@
+[
+  
+  {
+    "productId": 1,
+    "productName": "2 Pac : All Eyes On Me",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 500,
+    "starRating": 5,
+    "imageUrl": "assets/images/2pac-Alleyezonme.jpg"
+  },
+  {
+    "productId": 1,
+    "productName": "Ab Soul : Control System",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 200.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/AbSoul-Control-System.jpeg"
+  },
+  {
+    "productId": 1,
+    "productName": "Jay Z : Blueprint",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 190,
+    "starRating": 4,
+    "imageUrl": "assets/images/JayZ-Blueprint.png"
+  },
+  {
+    "productId": 1,
+    "productName": "J Cole : Forest Hills Drive",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 210.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/JCole-ForestHillsDrive.jpg"
+  },
+  {
+    "productId": 1,
+    "productName": "Joey Bada$$ : B4DA$$",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 300,
+    "starRating": 6,
+    "imageUrl": "assets/images/JoeyBad$$-B4DA$$.jpg"
+  },
+  {
+    "productId": 1,
+    "productName": "Kanye West : Graduation",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 240,
+    "starRating": 4.5,
+    "imageUrl": "assets/images/KanyeWest-Graduation.jpg"
+  },
+  {
+    "productId": 1,
+    "productName": "KOTA The Friend : FOTO",
+    "productCode": "GDN-0011",
+    "releaseDate": "March 19, 2019",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 150,
+    "starRating": 3.5,
+    "imageUrl": "assets/images/KOTATheFriend-FOTO.jpg"
+  },
+  {
+    "productId": 2,
+    "productName": "Mac Miller : Faces",
+    "productCode": "GDN-0023",
+    "releaseDate": "March 18, 2019",
+    "description": "15 gallon capacity rolling garden cart",
+    "price": 400,
+    "starRating": 5,
+    "imageUrl": "assets/images/MacMiller-Faces.jpg"
+  },
+  {
+    "productId": 5,
+    "productName": "Pro Era : The Aprocalypse",
+    "productCode": "TBX-0048",
+    "releaseDate": "May 21, 2019",
+    "description": "Curved claw steel hammer",
+    "price": 500,
+    "starRating": 5,
+    "imageUrl": "assets/images/ProEra-TheAprocalypse.jpg"
+  },
+  {
+    "productId": 10,
+    "productName": "Rick Ross : Teflon Don",
+    "productCode": "GMG-0042",
+    "releaseDate": "October 15, 2018",
+    "description": "Standard two-button video game controller",
+    "price": 99.50,
+    "starRating": 2,
+    "imageUrl": "assets/images/RickRoss-TeflonDon.jpg"
+  },
+  {
+    "productId": 8,
+    "productName": "Wiz Khalifa : Rolling Papers",
+    "productCode": "TBX-0022",
+    "releaseDate": "May 15, 2019",
+    "description": "15-inch steel blade hand saw",
+    "price": 350,
+    "starRating": 4.0,
+    "imageUrl": "assets/images/rolling-papers-cover.jpg"
+  }
+]
