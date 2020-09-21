@@ -17,6 +17,21 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card'; 
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+import {MatListModule} from '@angular/material/list';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { HipHopComponent } from './hip-hop/hip-hop.component';
+import { RockRollComponent } from './rock-roll/rock-roll.component';
+import { GospelComponent } from './gospel/gospel.component';
+import { JazzComponent } from './jazz/jazz.component';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -25,27 +40,44 @@ import {MatTabsModule} from '@angular/material/tabs';
     ConvertToSpacesPipe,
     StarComponent,
     ProductDetailComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    SignInComponent,
+    SignUpComponent,
+    HipHopComponent,
+    RockRollComponent,
+    GospelComponent,
+    JazzComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot([
-      { path: 'albums', component: ProductListComponent },
+      { path: 'music', component: ProductListComponent },
+      { path: 'sign-in', component: SignInComponent },
+      { path: 'sign-up', component: SignUpComponent },
       { path: 'track/:id', 
       canActivate: [ProductDetailGuard],component: ProductDetailComponent },
       { path: 'welcome', component: WelcomeComponent},
       { path: '', redirectTo: 'welcome', pathMatch: 'full'},
       { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
     ]),
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    MatListModule,
     BrowserAnimationsModule, 
     MatTableModule,
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule,
+    MatGridListModule,
+    MatPaginatorModule,
+    MatIconModule, 
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

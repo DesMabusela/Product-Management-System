@@ -15,9 +15,9 @@ td{
 .mat-row{
   transition: transform .2s;
 }
-.mat-row:hover{
+.mat-row:hover{ 
   background: #b8e9ff;
-  transform: scale(1.05);
+  transform: scale(1.04);
   font-weight: bold;
 }
 .carousel-inner{

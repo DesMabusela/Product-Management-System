@@ -1,0 +1,54 @@
+[
+  
+  {
+    "productId": 1,
+    "productName": "AC/DC : High Voltage",
+    "productCode": "HG",
+    "releaseDate": "30 April 1976",
+    "description": "The first internationally released studio album by Australian hard rock band AC/DC. It contains tracks from their first two previous Australia-only issued albums: High Voltage and T.N.T. (both from 1975).",
+    "price": 1500,
+    "starRating": 5,
+    "imageUrl": "assets/images/ACDC-HighVoltage.jpg"
+  },
+  {
+    "productId": 2,
+    "productName": "The Clash : London Calling",
+    "productCode": "LC",
+    "releaseDate": "December 14, 1979 ",
+    "description": "The third studio album by English rock band the Clash. It was originally released as a double album in the United Kingdom on 14 December 1979 by CBS Records, and in the United States in January 1980 by Epic Records.",
+    "price": 200.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/TheClash-LondoCalling.jpg"
+  },
+  {
+    "productId": 3,
+    "productName": "Cream : Disraeli Gears",
+    "productCode": "DG",
+    "releaseDate": "September 11, 1962",
+    "description": "The second studio album by the British rock band Cream. It was released in November 1967[1] and went on to reach No. 5 on the UK Albums Chart.[2] and No. 1 on the Finnish charts. The album was also No. 1 for two weeks on the Australian album chart and was listed as the No. 1 album of 1968 by Cash Box in the year-end album chart in the United States",
+    "price": 190,
+    "starRating": 4,
+    "imageUrl": "assets/images/Cream-DisraeliGears.jpg"
+  },
+  {
+    "productId": 4,
+    "productName": "The Who : Who are you",
+    "productCode": "WRY",
+    "releaseDate": "August 18, 1978",
+    "description": " The eighth studio album by English rock band the Who, released on 18 August 1978 by Polydor Records in the United Kingdom and MCA Records in the United States. The album received mixed reviews from critics, though it was a commercial success, peaking at number 2 on the US charts and number 6 on the UK charts.",
+    "price": 210.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/TheWho-WhoAreYou.jpg"
+  },
+  {
+    "productId": 5,
+    "productName": "Velvet Revolver : Contraband",
+    "productCode": "BD$",
+    "releaseDate": "June 8, 2004",
+    "description": "The debut studio album by American hard rock band Velvet Revolver, released on June 8, 2004 by RCA Records. A commercial success, Contraband debuted at number one on the American Billboard 200 chart and was certified double platinum by the RIAA",
+    "price": 300,
+    "starRating": 6,
+    "imageUrl": "assets/images/Velvet-Contraband.jpg"
+  }
+ 
+]

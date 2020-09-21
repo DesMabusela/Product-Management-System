@@ -1,0 +1,44 @@
+<mat-grid-list cols="3" rowHeight="1:1.5">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card style="opacity: 0.9;" class="example-card">
+            <mat-card-header> 
+              <mat-card-title><b>Sign Up</b></mat-card-title> 
+            </mat-card-header>
+            <img src="../../assets/images/sign-logo.png" alt="sasd">
+            <br><br>
+            <mat-card-content>
+                <!-- Body -->
+                <form class="example-form"> 
+
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Fullname :</mat-label>
+                      <input [(ngModel)]="fullname" matInput type="fullname" placeholder="John Smith" name="fullname" required>
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Contact :</mat-label>
+                        <input [(ngModel)]="contact"  matInput type="tel" required name="contact">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Email :</mat-label>
+                        <input [(ngModel)]="email" matInput type="email" placeholder="smith@gamil.com" name="email" required>
+                      </mat-form-field>
+                    
+                      <mat-form-field class="example-full-width">
+                          <mat-label>Password :</mat-label>
+                          <input [(ngModel)]="password"  matInput type="password" required name="password">
+                      </mat-form-field>
+                  </form>
+            </mat-card-content>
+            <mat-card-actions> 
+                <!-- Action Buttons -->
+                <button mat-raised-button color="primary" (click)="SignUp()">Sign Up</button>
+            </mat-card-actions>
+            <hr>
+            <p>If you already have an account <a [routerLink]="['/sign-in']">Sign In</a></p>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile> 
+  </mat-grid-list>
+  <br><br><br>

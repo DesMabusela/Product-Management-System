@@ -1,29 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import {IProduct} from './product';
-import {ProductService} from './product.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {IProduct} from '../hip-hop/product'; 
 import {MatTableDataSource} from '@angular/material/table';
-
-//Periodic Element Interface
-export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
-}
-
-//Populate Periodic Element Object
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
-];
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ProductDetailComponent } from './product-detail.component';
+import {MatPaginator} from '@angular/material/paginator';
+import {MatSort} from '@angular/material/sort'; 
 
 @Component({
   selector: 'products',
@@ -35,11 +16,18 @@ export class ProductListComponent implements OnInit
 
   //Angular Material
   displayedColumns: string[] = ['imageUrl', 'productName','productCode','releaseDate','price','starRating'];
-  dataSource;
+  dataSource: any;
+  
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  @ViewChild(MatSort) sort: MatSort;
 
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+
+    if (this.dataSource.paginator) {
+      this.dataSource.paginator.firstPage();
+    }
   }
 
   //Bootstrap Table
@@ -64,26 +52,42 @@ export class ProductListComponent implements OnInit
 
   products: IProduct[];
 
- constructor(private productService: ProductService){ 
+ constructor(){ 
  }
+ openDialog(row): void {
+  // const dialogRef = this.dialog.open(ProductDetailComponent, {
+  //   width: '50%',
+  //   data: row
+  // });
+
+  // dialogRef.afterClosed().subscribe(result => {
+  //   console.log('The dialog was closed'); 
+  // });
+}
+
+
 
  onRatingClicked(message:string): void{
    this.pageTitle = message;
  }
-
+ SelectedRow(row){
+  console.log(row);
+ }
  ngOnInit(): void {
-  this.productService.getProducts().subscribe({
-    next: products => {
-      this.products = products;
-      this.filteredProducts = this.products;  
-      this.dataSource = new MatTableDataSource(products);
-      console.log(this.dataSource);
-    },
-    error: err => this.errorMessage = err
-  });
+  // this.productService.getProducts().subscribe({
+  //   next: products => {
+  //     this.products = products;
+  //     this.filteredProducts = this.products;  
+  //     this.dataSource = new MatTableDataSource(products);
+  //     console.log(this.dataSource);
+  //     this.dataSource.paginator = this.paginator;
+  //     this.dataSource.sort = this.sort;
+  //   },
+  //   error: err => this.errorMessage = err
+  // });
 
 
-}
+} 
   toggleImage():void{
     this.showImage = !this.showImage;
   }

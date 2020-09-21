@@ -1,0 +1,78 @@
+.hero__text {
+
+    h6 {
+        color: #e53637;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 28px;
+        position: relative;
+        top: 150px; 
+        animation: move 2s ease-in-out;  
+    }
+
+    h2 {
+        color: #111111;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        margin-bottom: 30px;
+        position: relative;
+        top: 150px; 
+        animation: slide 2s ease-in-out;  
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 35px;
+        position: relative;
+        top: 150px; 
+        animation: slide 1.5s ease-in-out;  
+    }
+
+    .primary-btn {
+        position: relative;
+        top: 150px; 
+        animation: move 1.5s ease-in-out;  
+        span {
+            font-size: 20px;
+            position: relative;
+            top: 4px;
+            font-weight: 700;
+        }
+    }
+}
+@keyframes move{  
+    0%{
+        opacity: 0;
+    } 
+    50%{
+        opacity: 0;
+        transform: translateY(-80px);
+    } 
+}
+@keyframes slide{  
+    0%{
+        opacity: 0;
+    } 
+    50%{
+        opacity: 0;
+        transform: translateX(-80px);
+    } 
+}
+.hero__social {
+    margin-top: 45%;
+
+    a {
+        font-size: 16px;
+        color: #3d3d3d;
+        display: inline-block;
+        margin-right: 32px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

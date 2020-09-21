@@ -1,0 +1,28 @@
+
+button{
+    width: 75%;
+}
+mat-grid-tile {
+    text-align: center;
+  }
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .example-card{
+    animation: move 2s;
+  }
+  @keyframes move{  
+    0%{
+        opacity: 0;
+    } 
+    50%{
+        opacity: 0;
+        transform: translateY(-80px);
+    } 
+}

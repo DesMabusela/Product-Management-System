@@ -1,0 +1,36 @@
+<mat-grid-list cols="3" rowHeight="1:1.5">
+    <mat-grid-tile></mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card style="opacity: 0.9;" class="example-card">
+            <mat-card-header > 
+              <mat-card-title ><b>Sign In</b></mat-card-title> 
+            </mat-card-header>
+            <img src="../../assets/images/sign-logo.png" alt="sasd">
+            <br> <br>
+            <mat-card-content>
+                <!-- Body -->
+                <form class="example-form">
+                    <mat-form-field class="example-full-width">
+                      <mat-label>Username :</mat-label>
+                      <input [(ngModel)]="email" matInput type="email" placeholder="smith@gamil.com" name="email" required>
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Password :</mat-label>
+                        <input [(ngModel)]="password"  matInput type="password" required name="password">
+                    </mat-form-field>
+                    <a href=""><b>Forgot password ?</b></a>
+                  </form>
+            </mat-card-content>
+            <mat-card-actions> 
+                <!-- Action Buttons -->
+                <button mat-raised-button color="primary" (click)="SignIn()">Sign In</button>
+            </mat-card-actions>
+            <hr>
+            <p>If you don't have account <a [routerLink]="['/sign-up']">Sign Up</a></p>
+          </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile></mat-grid-tile> 
+  </mat-grid-list>
+  <br><br>
+  <br>
